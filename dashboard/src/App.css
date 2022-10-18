@@ -1,0 +1,76 @@
+:root {
+  --radius: 5px;
+  --padding: 10px;
+}
+
+.App {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: black;
+  background-color: lightgray;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  grid-template-areas: 
+  "content1 content2 content3 content4"
+  "content1 content5 content5 content5"
+  "content1 content5 content5 content5";
+}
+
+.sidebar{
+  grid-area: content1;
+  background-color: darkgray;
+  border-radius: var(--radius);
+  padding-top: var(--padding);
+  grid-gap: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.reviews{
+  grid-area: content2;
+  background-color: darkgray;
+  border-radius: var(--radius);
+  padding-top: var(--padding);
+  grid-gap: 0.2rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.average-rating{
+  grid-area: content3;
+  background-color: darkgray;
+  border-radius: var(--radius);
+  padding-top: var(--padding);
+  grid-gap: 0.2rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.sentiment{
+  grid-area: content4;
+  background-color: darkgray;
+  border-radius: var(--radius);
+  padding-top: var(--padding);
+  grid-gap: 0.2rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.website-visitor{
+  background-color: darkgray;
+  grid-area: content5;
+  border-radius: var(--radius);
+  padding-top: var(--padding);
+  grid-gap: 0.2rem;
+  justify-content: center;
+  align-content: center;
+}
